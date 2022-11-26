@@ -32,12 +32,23 @@ export default function Banner({ onEnterChange }) {
           <h2 key="h2">TECH HUNTER</h2>
           <p key="content">software to the moon !</p>
           <span className="line" key="line" />
-          {/* <div
-            key="button1"
-            className={`${classes.startButton} ${classes.clearfix}`}
-          >
-            <a>contact</a>
-          </div> */}
+          <div key="buttons" className={classes.bannerButton}>
+            <div key="button1" className={classes.startButton}>
+              <a>Linked in</a>
+            </div>
+            <div
+              key="button1"
+              className={`${classes.startButton} ${classes.clearfix}`}
+            >
+              <a>Instagram</a>
+            </div>
+            <div
+              key="button1"
+              className={`${classes.startButton} ${classes.clearfix}`}
+            >
+              <a>Telegram</a>
+            </div>
+          </div>
         </QueueAnim>
         <Icon type="down" className="down" />
       </ScrollElement>

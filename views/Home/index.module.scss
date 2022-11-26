@@ -260,25 +260,27 @@
   }
   
   .bannerTextWrapper .startButton {
-     margin-bottom: 24px;
+    //  margin-bottom: 24px;
+    margin-top: 10rem;
+    margin-left: 64PX;
     text-align: right;
     > a {
       display: inline-block;
       height: 40px;
-      padding: 0 16px;
+      // padding: 0 16px;
       font-weight: 500;
       border-radius: 15px;
       border: 1px solid 'pink';
       text-decoration: none;
-      color: #0ae;
-      font-size: 15px;
+      color: #fff;
+      font-size: 18px;
       background: transparent;
       transition: all .45s;
       text-align: center;
       line-height: 36px;
-      margin-left: 8px;
+      // margin-left: 8px;
       &:hover {
-        color: #fff;
+        color: $tech-primary-pink;
         background: 'pink';
       }
     }
@@ -685,4 +687,8 @@
 
 .footerRow {
   padding: 8px 8px 16px;
+}
+
+.bannerButton {
+  display: flex;
 }

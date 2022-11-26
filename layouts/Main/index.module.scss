@@ -388,7 +388,7 @@
   }
 
   footer.dark {
-    background-color: $tech-secondary-blue;
+    // background-color: $tech-secondary-blue;
     color: rgba(255, 255, 255, 0.65);
     a {
       color: rgba(255, 255, 255, 0.9);
@@ -684,8 +684,25 @@
 }
 
 .footerRow {
-  padding: 8px 8px 16px;
-  min-height: 230px;
+  border-top: 1px solid $border-color-base;
+  margin: 16px 56px;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footerLinks {
+  display: flex;
+}
+
+.footerItem {
+  cursor: pointer;
+  margin-right: 16px;
+  margin-bottom: 0;
+  font-size: 16px;
+  &:hover {
+    color: $tech-primary-pink;
+  }
 }
 
 .menuCol {

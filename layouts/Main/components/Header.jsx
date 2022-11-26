@@ -68,9 +68,9 @@ const Header = (props) => {
         TEAM
       </Menu.Item>
 
-      <Menu.Item onClick={() => router.push("/")} key="docs/react">
+      {/* <Menu.Item onClick={() => router.push("/")} key="docs/react">
         PRODUCTS
-      </Menu.Item>
+      </Menu.Item> */}
       <Menu.Item
         onClick={() => router.push("/technologies")}
         key="docs/pattern"

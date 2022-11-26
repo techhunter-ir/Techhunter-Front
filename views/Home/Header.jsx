@@ -65,7 +65,7 @@ const Header = (props) => {
       </Menu.Item>
 
       <Menu.Item key="docs/react">PRODUCTS</Menu.Item>
-      <Menu.Item key="docs/pattern">TECHNOLOGIES</Menu.Item>
+      <Menu.Item key="docs/pattern">SERVICES</Menu.Item>
       <Menu.Item key="docs/resource">CONTACT</Menu.Item>
     </Menu>,
   ];

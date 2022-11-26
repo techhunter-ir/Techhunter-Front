@@ -31,7 +31,7 @@
 }
 
 .cardContainer {
-    padding:80px 48px;
+    padding:32px;
     display: flex;
     justify-content: space-evenly;
 }
@@ -49,6 +49,41 @@
     margin-top: 80px;
 }
 
-.title {
+.person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
 
+.name {
+    font-size: 18px;
+    margin: 8px 0 0 8px;
+    font-weight: 600;
+}
+
+.greeting {
+    color: $tech-primary-pink;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-top: 120px;
+}
+
+.teamMember {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
 }
