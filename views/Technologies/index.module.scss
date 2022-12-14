@@ -52,7 +52,10 @@
 }
 
 .title {
-
+  font-size: 16px;
+  margin-top: 8px;
+  font-weight: 600;
+  margin-bottom: 0;
 }
 
 @keyframes leftToRight {
@@ -67,10 +70,12 @@
   .greyContainer {
     background-color: $tech-background-gray;
     padding: 32px 56px;
+    margin-bottom: 40px;
   }
 
   .container {
     padding: 32px 56px;
+    margin-bottom: 40px;
   }
 
   .icon {
@@ -81,11 +86,24 @@
     margin-bottom: 40px;
     display: flex;
     align-items: center;
-    justify-content: center;     
+    justify-content: center;
+    filter: grayscale(100%);
+    width: 90%;
+    height: 90%;
+    transition: width 2s, height 2s;
+    cursor: pointer;
+    &:hover{
+      filter: none !important;
+      width: 100%;
+      height: 100%;
+    }  
   }
 
   .rowContainer {
     padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .benefit {
@@ -98,4 +116,11 @@
 
   .benefitImage {
     margin-bottom: 12px;
+  }
+
+  .techDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
