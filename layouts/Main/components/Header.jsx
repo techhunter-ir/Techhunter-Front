@@ -77,9 +77,9 @@ const Header = (props) => {
       >
         TECHNOLOGIES
       </Menu.Item>
-      <Menu.Item onClick={() => router.push("/contact")} key="docs/resource">
+      {/* <Menu.Item onClick={() => router.push("/contact")} key="docs/resource">
         CONTACT
-      </Menu.Item>
+      </Menu.Item> */}
     </Menu>,
   ];
 
