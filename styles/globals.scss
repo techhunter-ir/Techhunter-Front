@@ -42,3 +42,11 @@ a {
 .ant-collapse {
   background-color: $tech-background-gray !important;
 }
+
+@font-face {
+  font-family: nasalization;
+  font-weight: 400;
+  font-style: normal;
+  src: url('/public/fonts/nasalization-rg.otf') format('otf'),
+      url('/public/fonts/nasalization-rg.otf') format('otf');
+}

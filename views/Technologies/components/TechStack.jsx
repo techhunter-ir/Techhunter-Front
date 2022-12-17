@@ -101,10 +101,10 @@ export const TechStack = () => {
             <div>
               <Image
                 style={{ backgroundColor: "black" }}
-                src="/js-logo.png"
+                src="/jslogo.png"
                 alt="icon"
-                width={150}
-                height={40}
+                width={80}
+                height={80}
               />
             </div>
           </Link>
@@ -116,7 +116,7 @@ export const TechStack = () => {
             className={classes.iconCol}
           >
             <div>
-              <Image src="/nodejs.svg" alt="icon" width={150} height={60} />
+              <Image src="/nodelogo.svg" alt="icon" width={150} height={60} />
             </div>
           </Link>
         </Col>
@@ -127,7 +127,12 @@ export const TechStack = () => {
             className={classes.iconCol}
           >
             <div className={classes.techDiv}>
-              <Image src="/gatsby.png" alt="icon" width={114} height={100} />
+              <Image
+                src="/Gatsby_Logo.png"
+                alt="icon"
+                width={114}
+                height={100}
+              />
               <p className={classes.title}>gatsby</p>
             </div>
           </Link>
@@ -141,6 +146,47 @@ export const TechStack = () => {
           >
             <div>
               <Image src="/nextjs.svg" alt="icon" width={130} height={40} />
+            </div>
+          </Link>
+        </Col>
+
+        <Col span={6}>
+          <Link
+            href="https://mariadb.org/"
+            target="_blank"
+            className={classes.iconCol}
+          >
+            <div className={classes.techDiv}>
+              <Image src="/mariadb.png" alt="icon" width={114} height={100} />
+            </div>
+          </Link>
+        </Col>
+
+        <Col span={6}>
+          <Link
+            href="https://www.python.org/"
+            target="_blank"
+            className={classes.iconCol}
+          >
+            <div className={classes.techDiv}>
+              <Image src="/python.png" alt="icon" width={114} height={100} />
+            </div>
+          </Link>
+        </Col>
+
+        <Col span={6}>
+          <Link
+            href="https://go.dev/"
+            target="_blank"
+            className={classes.iconCol}
+          >
+            <div className={classes.techDiv}>
+              <Image
+                src="/Go_Logo_Blue.svg"
+                alt="icon"
+                width={150}
+                height={130}
+              />
             </div>
           </Link>
         </Col>
