@@ -15,7 +15,8 @@ a {
 
 * {
   box-sizing: border-box;
-  font-family: Cheltenham,sans-serif;
+  // font-family: "NasalizationRg", sans-serif;
+  font-family: jura;  
 }
 
 @media (prefers-color-scheme: dark) {
@@ -47,6 +48,32 @@ a {
   font-family: nasalization;
   font-weight: 400;
   font-style: normal;
-  src: url('/public/fonts/nasalization-rg.otf') format('otf'),
-      url('/public/fonts/nasalization-rg.otf') format('otf');
+  src: url('/public/fonts/nasalization.woff') format('woff'),
+      url('/public/fonts/nasalization.woff') format('woff');
+}
+
+@font-face {
+  font-family: jura;
+  font-weight: 400;
+  font-style: normal;
+  src: url('/public/fonts/Jura/static/Jura-Regular.ttf') format('ttf'),
+      url('/public/fonts/Jura/static/Jura-Regular.ttf') format('ttf');
+}
+
+
+// @font-face {
+//   font-family: "NasalizationRg";
+//   src: local("NasalizationRg"),
+//    url("/public/fonts/NasalizationRg-Regular.ttf") format("truetype");
+//   font-weight: 400;
+//   }
+
+@font-face {
+  font-family: Covington;
+    src:  url('/public/fonts/webfonts/Covington-SC-Exp-Bold-Italic.ttf.woff') format('woff'),
+    url('/public/fonts/webfonts/Covington-SC-Exp-Bold-Italic.ttf.eot');
+    // url('/public/fonts/webfonts/Covington-SC-Exp-Bold-Italic.ttf.eot'),
+    // url('/public/fonts/webfonts/Covington-SC-Exp-Bold-Italic.eot?#iefix') format('embedded-opentype'); 
+    font-weight: 400;
+    // font-style: normal;
 }
