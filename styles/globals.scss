@@ -1,4 +1,5 @@
 @import '../styles/variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Kurale&display=swap');
 
 html,
 body {
@@ -15,7 +16,7 @@ a {
 
 * {
   box-sizing: border-box;
-  font-family: Cheltenham,sans-serif;
+  font-family: IRANSansXFaNum, serif !important;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -44,9 +45,125 @@ a {
 }
 
 @font-face {
+  font-family: 'Kurale';
+  src: url('/fonts/Kurale.ttf');
+  font-style: medium;
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: nasalization;
   font-weight: 400;
   font-style: normal;
   src: url('/public/fonts/nasalization-rg.otf') format('otf'),
       url('/public/fonts/nasalization-rg.otf') format('otf');
+}
+
+
+@font-face {
+  font-family: IRANSansXFaNum;
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+  src: url('/public/fonts/fonts/iransansX-faNum/woff2/IRANSansXFaNum-Thin.woff2') format('woff2'),
+      url('/public/fonts/fonts/iransansX-faNum/woff/IRANSansXFaNum-Thin.woff') format('woff');
+}
+
+@font-face {
+  font-family: IRANSansXFaNum;
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+  src: url('/public/fonts/fonts/iransansX-faNum/woff2/IRANSansXFaNum-UltraLight.woff2') format('woff2'),
+      url('/public/fonts/fonts/iransansX-faNum/woff/IRANSansXFaNum-UltraLight.woff') format('woff');
+}
+
+@font-face {
+  font-family: IRANSansXFaNum;
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  src: url('/public/fonts/fonts/iransansX-faNum/woff2/IRANSansXFaNum-Light.woff2') format('woff2'),
+      url('/public/fonts/fonts/iransansX-faNum/woff/IRANSansXFaNum-Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: IRANSansXFaNum;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url('/public/fonts/fonts/iransansX-faNum/woff2/IRANSansXFaNum-Regular.woff2') format('woff2'),
+      url('/public/fonts/fonts/iransansX-faNum/woff/IRANSansXFaNum-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: IRANSansXFaNum;
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url('/public/fonts/fonts/iransansX-faNum/woff2/IRANSansXFaNum-Medium.woff2') format('woff2'),
+      url('/public/fonts/fonts/iransansX-faNum/woff/IRANSansXFaNum-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: IRANSansXFaNum;
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url('/public/fonts/fonts/iransansX-faNum/woff2/IRANSansXFaNum-DemiBold.woff2') format('woff2'),
+      url('/public/fonts/fonts/iransansX-faNum/woff/IRANSansXFaNum-DemiBold.woff') format('woff');
+}
+
+@font-face {
+  font-family: IRANSansXFaNum;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url('/public/fonts/fonts/iransansX-faNum/woff2/IRANSansXFaNum-Bold.woff2') format('woff2'),
+      url('/public/fonts/fonts/iransansX-faNum/woff/IRANSansXFaNum-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: IRANSansXFaNum;
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+  src: url('/public/fonts/fonts/iransansX-faNum/woff2/IRANSansXFaNum-ExtraBold.woff2') format('woff2'),
+      url('/public/fonts/fonts/iransansX-faNum/woff/IRANSansXFaNum-ExtraBold.woff') format('woff');
+}
+
+@font-face {
+  font-family: IRANSansXFaNum;
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+  src: url('/public/fonts/fonts/iransansX-faNum/woff2/IRANSansXFaNum-Black.woff2') format('woff2'),
+      url('/public/fonts/fonts/iransansX-faNum/woff/IRANSansXFaNum-Black.woff') format('woff');
+}
+
+@font-face {
+  font-family: IRANSansX;
+  font-weight: 400;
+  font-style: normal;
+  src: url('/static/fonts/iransansX/woff2/IRANSansX-Regular.woff2') format('woff2'),
+      url('/static/fonts/iransansX/woff/IRANSansX-Regular.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: IRANSansX;
+  font-weight: 500;
+  font-style: normal;
+  src: url('/static/fonts/iransansX/woff2/IRANSansX-Medium.woff2') format('woff2'),
+      url('/static/fonts/iransansX/woff/IRANSansX-Medium.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/static/fonts/MaterialIcon.woff2') format('woff2');
+  font-display: swap;
 }

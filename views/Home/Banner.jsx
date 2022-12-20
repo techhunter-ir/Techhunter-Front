@@ -17,6 +17,7 @@ function typeFunc(a) {
 export default function Banner({ onEnterChange }) {
   return (
     <section className={`${classes.page} ${classes.bannerWrapper}`}>
+      <p>تیسیدبدتب</p>
       <ScrollElement
         className={classes.page}
         id="banner"
@@ -29,7 +30,7 @@ export default function Banner({ onEnterChange }) {
           delay={300}
           key="banner"
         >
-          <h2 key="h2">TECH HUNTER</h2>
+          <h2 key="h2">TECH HUNTER بلمنیئلنی</h2>
           <p key="content">software to the moon !</p>
           <span className="line" key="line" />
           <div key="buttons" className={classes.bannerButton}>
