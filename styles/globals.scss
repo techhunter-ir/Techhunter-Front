@@ -15,8 +15,8 @@ a {
 
 * {
   box-sizing: border-box;
-  // font-family: "NasalizationRg", sans-serif;
-  font-family: jura;  
+  font-family: "NasalizationRg", sans-serif;
+  // font-family: jura;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -61,12 +61,12 @@ a {
 }
 
 
-// @font-face {
-//   font-family: "NasalizationRg";
-//   src: local("NasalizationRg"),
-//    url("/public/fonts/NasalizationRg-Regular.ttf") format("truetype");
-//   font-weight: 400;
-//   }
+@font-face {
+  font-family: "NasalizationRg";
+  src: local("NasalizationRg"),
+   url("/fonts/NasalizationRg-Regular.ttf") format("truetype");
+  font-weight: 400;
+  }
 
 @font-face {
   font-family: Covington;
