@@ -5,6 +5,7 @@ import Main from "../layouts/Main/Main";
 import Head from "next/head";
 
 export default function App({ Component, pageProps }: AppProps) {
+  console.log("techhunter");
   return (
     <>
       <Head>
