@@ -28,7 +28,12 @@ const Team = () => {
         {/* <p>You can do big things with a small team.</p> */}
 
         <div className={classes.cardContainer}>
-          <div
+          <div className={classes.imageContainer} />
+          <div className={classes.names}>
+            <p className={classes.name}>Aida Rezakhani</p>
+            <p className={classes.name}>Mohammad Shahriari Fard</p>
+          </div>
+          {/* <div
             onClick={() => handleModal("mohammad")}
             className={classes.person}
           >
@@ -44,7 +49,7 @@ const Team = () => {
               <Image src={"/person2.svg"} width={30} height={30} alt="icon" />
               <p className={classes.name}>Aida Rezakhani</p>
             </div>
-          </div>
+          </div> */}
         </div>
 
         {/* <div className={classes.cardContainer}>
