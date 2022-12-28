@@ -19,12 +19,13 @@ export default function Page2() {
         leaveReverse
       >
         <h2 key="h2">Full stack, full service.</h2>
-        <p key="p" style={{ maxWidth: 300 }}>
+        <p key="p">
           From databases to backend to frontend to mobile, we handle everything.
           With our extensive skill set, TECH HUNTER can help you with every step
           of execution: architecture, design, development, testing, deployment,
           and support.
         </p>
+        <img className={classes.mobileImage} src="/monkey.png" width="100%" />
       </QueueAnim>
       <TweenOne
         key="image"

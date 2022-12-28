@@ -11,7 +11,7 @@ export const TechStack = () => {
         className={classes.rowContainer}
         gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}
       >
-        <Col span={6}>
+        <Col xs={12} md={6} lg={6}>
           <Link
             href="https://laravel.com/"
             target="_blank"
@@ -29,7 +29,7 @@ export const TechStack = () => {
             </div>
           </Link>
         </Col>
-        <Col span={6}>
+        <Col xs={12} md={6} lg={6}>
           <Link
             href="https://www.mongodb.com/"
             target="_blank"
@@ -46,7 +46,7 @@ export const TechStack = () => {
             </div>
           </Link>
         </Col>
-        <Col span={6}>
+        <Col xs={12} md={6} lg={6}>
           <Link
             href="https://www.docker.com/"
             target="_blank"
@@ -57,7 +57,7 @@ export const TechStack = () => {
             </div>
           </Link>
         </Col>
-        <Col span={6}>
+        <Col xs={12} md={6} lg={6}>
           <Link
             href="https://www.postman.com/"
             target="_blank"
@@ -69,7 +69,7 @@ export const TechStack = () => {
             </div>
           </Link>
         </Col>
-        <Col span={6}>
+        <Col xs={12} md={6} lg={6}>
           <Link
             href="https://www.php.net/"
             target="_blank"
@@ -80,7 +80,7 @@ export const TechStack = () => {
             </div>
           </Link>
         </Col>
-        <Col span={6}>
+        <Col xs={12} md={6} lg={6}>
           <Link
             href="https://reactjs.org/"
             target="_blank"
@@ -92,7 +92,7 @@ export const TechStack = () => {
             </div>
           </Link>
         </Col>
-        <Col span={6}>
+        <Col xs={12} md={6} lg={6}>
           <Link
             href="https://www.javascript.com/"
             target="_blank"
@@ -109,7 +109,7 @@ export const TechStack = () => {
             </div>
           </Link>
         </Col>
-        <Col span={6}>
+        <Col xs={12} md={6} lg={6}>
           <Link
             href="https://nodejs.org/"
             target="_blank"
@@ -120,7 +120,7 @@ export const TechStack = () => {
             </div>
           </Link>
         </Col>
-        <Col span={6}>
+        <Col xs={12} md={6} lg={6}>
           <Link
             href="https://www.gatsbyjs.com/"
             target="_blank"
@@ -138,7 +138,7 @@ export const TechStack = () => {
           </Link>
         </Col>
 
-        <Col span={6}>
+        <Col xs={12} md={6} lg={6}>
           <Link
             href="https://nextjs.org/"
             target="_blank"
@@ -150,7 +150,7 @@ export const TechStack = () => {
           </Link>
         </Col>
 
-        <Col span={6}>
+        <Col xs={12} md={6} lg={6}>
           <Link
             href="https://mariadb.org/"
             target="_blank"
@@ -162,7 +162,7 @@ export const TechStack = () => {
           </Link>
         </Col>
 
-        <Col span={6}>
+        <Col xs={12} md={6} lg={6}>
           <Link
             href="https://www.python.org/"
             target="_blank"
@@ -174,7 +174,7 @@ export const TechStack = () => {
           </Link>
         </Col>
 
-        <Col span={6}>
+        <Col xs={12} md={6} lg={6}>
           <Link
             href="https://go.dev/"
             target="_blank"

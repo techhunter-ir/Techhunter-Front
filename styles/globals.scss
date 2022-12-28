@@ -12,6 +12,7 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+  border: none;
 }
 
 * {
@@ -42,6 +43,10 @@ a {
 
 .ant-collapse {
   background-color: $tech-background-gray !important;
+}
+
+.ant-popover-inner-content {
+  padding: 0 !important;
 }
 
 @font-face {

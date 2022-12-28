@@ -9,7 +9,7 @@ export const Advantages = () => {
         className={classes.rowContainer}
         gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}
       >
-        <Col className={classes.benefit} span={8}>
+        <Col className={classes.benefit} lg={8}>
           <Image
             className={classes.benefitImage}
             src="/worldIcon.svg"
@@ -19,7 +19,7 @@ export const Advantages = () => {
           />
           <p>Our work gets praises from clients all over the world.</p>
         </Col>
-        <Col className={classes.benefit} span={8}>
+        <Col className={classes.benefit} lg={8}>
           <Image
             className={classes.benefitImage}
             src="/moneyIcon.svg"
@@ -33,7 +33,7 @@ export const Advantages = () => {
             and support.
           </p>
         </Col>
-        <Col className={classes.benefit} span={8}>
+        <Col className={classes.benefit} lg={8}>
           <Image
             className={classes.benefitImage}
             src="/pricing.svg"
@@ -46,7 +46,7 @@ export const Advantages = () => {
             your money.
           </p>
         </Col>
-        <Col className={classes.benefit} span={8}>
+        <Col className={classes.benefit} lg={8}>
           <Image
             className={classes.benefitImage}
             src="/update.svg"
@@ -61,7 +61,7 @@ export const Advantages = () => {
             project.
           </p>
         </Col>
-        <Col className={classes.benefit} span={8}>
+        <Col className={classes.benefit} lg={8}>
           <Image
             className={classes.benefitImage}
             src="/star.svg"
@@ -71,7 +71,7 @@ export const Advantages = () => {
           />
           <p>Our team is self-sufficient and do not have to be micromanaged.</p>
         </Col>
-        <Col className={classes.benefit} span={8}>
+        <Col className={classes.benefit} lg={8}>
           <Image
             className={classes.benefitImage}
             src="/hands.svg"

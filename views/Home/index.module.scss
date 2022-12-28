@@ -220,6 +220,9 @@
     overflow: hidden;
     background: url("/banner2.png") no-repeat center / cover;
     height: 100vh;
+    @media screen and (max-width: 770px) {
+      display: none;
+      }
   }
   .bannerTextWrapper {
     position: absolute;
@@ -319,11 +322,19 @@
     background: #fff;
     display: flex;
     justify-content: space-between;
+
+    @media screen and (max-width: 770px) {
+      padding: 16px;
+      // flex-direction: column-reverse;
+     }
   
     .imageWrapper {
       width: 60%;
       float: left;
       position: relative;
+      @media screen and (max-width: 770px) {
+        display: none;
+       }
     }
   
     .textWrapper {
@@ -332,14 +343,21 @@
       position: relative;
       top: 20%;
       left: -30px;
-       z-index: 1;
+      z-index: 1;
+      @media screen and (max-width: 770px) {
+        width: 100%;
+        left: 0;
+        top: 5%;
+      }
     }
+
+ 
     .textWrapper h2,
     .textWrapperBottom h2 {
       font-size: 32px;
       color: 'black';
       font-weight: normal;
-      white-space: nowrap;
+      // white-space: nowrap;
     }
     .textWrapper p {
       margin: 10px 0 20px;
@@ -349,6 +367,15 @@
     }
     .leftText {
       padding-left: 10%;
+      @media screen and (max-width: 770px) {
+        padding: 0;
+       }
+    }
+  }
+
+  .mobileImage {
+    @media screen and (min-width: 770px) {
+      display: none;
     }
   }
   
@@ -357,6 +384,15 @@
     height: 470px;
     top: 50%;
     margin-top: -256px;
+    @media screen and (max-width: 770px) {
+      // background: url("/computer.png") no-repeat;
+      // background-repeat:no-repeat;
+      // background-size:cover;
+      // background-position: center;
+      // height: 300PX;
+      // margin-top: 0;
+      // top: 0;
+     }
   }
   .image2 {
     background: url("/monkey.png") no-repeat left / 800px;
@@ -376,6 +412,13 @@
     background: url("/cloud.png") no-repeat center / 615px;
     height: 420px;
     margin: auto;
+ 
+  }
+
+  .imageNone {
+    @media screen and (max-width: 770px) {
+      display: none;
+      }
   }
   
   .textWrapperBottom {
@@ -691,4 +734,14 @@
 
 .bannerButton {
   display: flex;
+}
+
+.container {
+  padding: 16px;
+  text-align: center;
+  margin: 10% auto 40px;
+}
+
+.page1 {
+  padding-top: 64px;
 }

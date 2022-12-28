@@ -24,14 +24,14 @@ export default function Page3({ isMobile }) {
         key="text"
         type={isMobile ? "bottom" : "right"}
         leaveReverse
-        style={{ top: "40%" }}
       >
         <h2 key="h2">We care.</h2>
-        <p key="p" style={{ maxWidth: 280 }}>
+        <p key="p">
           We take enormous pride in the value we bring to our clients. That's
           our ethos as a company. Our clients trust us to deliver technology
           critical to their business, and we deliver.。
         </p>
+        <img className={classes.mobileImage} src="/wecare.png" width="100%" />
       </QueueAnim>
     </ScrollOverPack>
   );
