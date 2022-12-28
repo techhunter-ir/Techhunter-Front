@@ -11,7 +11,7 @@ export default function Page1({ isMobile }) {
   return (
     <ScrollOverPack
       id="page1"
-      className={`${classes.contentWrapper} ${classes.page}`}
+      className={`${classes.contentWrapper} ${classes.page} ${classes.page1}`}
     >
       <TweenOne
         key="image"
@@ -26,15 +26,14 @@ export default function Page1({ isMobile }) {
         leaveReverse
       >
         <h2 key="h2">We build custom software.</h2>
-        <p key="p" style={{ maxWidth: 310 }}>
-          We're a software development company in Tehran.
-        </p>
+        <p key="p">We're a software development company in Tehran.</p>
         <p>
           We're full-stack software experts who: Build prototypes and
           applications from scratch, Fix and improve existing codebases, Work as
           a drop-in engineering team, Take pride in writing clean and extensible
           code
         </p>
+        <img className={classes.mobileImage} src="/computer.png" width="100%" />
         {/* <div key="button">
           <a>
             <Button type="primary" size="large">

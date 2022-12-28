@@ -1,5 +1,5 @@
 /* eslint-disable quotes */
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
 import { Menu, Row, Col, Icon, Button, Popover, Badge } from "antd";
@@ -7,43 +7,29 @@ import classes from "../index.module.scss";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { MenuOutlined } from "@ant-design/icons";
 
 const searchEngine = "Google";
 
 const Header = (props) => {
   const router = useRouter();
 
-  // state = {
-  //   menuVisible: false,
-  // };
-  // onMenuVisibleChange = (visible) => {
-  //   setState({
-  //     menuVisible: visible,
-  //   });
-  // };
-  // handleShowMenu = () => {
-  //   setState({
-  //     menuVisible: true,
-  //   });
-  // };
+  const [menuVisible, setMenuVisible] = useState(false);
 
-  // handleHideMenu = () => {
-  //   setState({
-  //     menuVisible: false,
-  //   });
-  // };
+  const onMenuVisibleChange = (visible) => {
+    setMenuVisible(visible);
+  };
 
-  // handleSelectFilter = (value, option) => {
-  //   const optionValue = option.props["data-label"];
-  //   return (
-  //     optionValue === searchEngine ||
-  //     optionValue.indexOf(value.toLowerCase()) > -1
-  //   );
-  // };
+  const handleShowMenu = () => {
+    setMenuVisible(true);
+  };
 
-  // render() {
-  const { isFirstScreen, isMoblie } = props;
-  const menuMode = isMoblie ? "inline" : "horizontal";
+  const handleHideMenu = () => {
+    setMenuVisible(false);
+  };
+
+  const { isFirstScreen, isMobile } = props;
+  const menuMode = isMobile ? "inline" : "horizontal";
   const headerClassName = classNames({
     clearfix: true,
     homeNavWhite: !isFirstScreen,
@@ -82,25 +68,35 @@ const Header = (props) => {
       </Menu.Item> */}
     </Menu>,
   ];
-
   return (
     <header id="header" className={`${classes.homeNavWhite} ${classes.header}`}>
       {menuMode === "inline" ? (
-        <Popover
-          overlayClassName={classes.popoverMenu}
-          placement="bottomRight"
-          content={menu}
-          trigger="click"
-          visible={menuVisible}
-          arrowPointAtCenter
-          onVisibleChange={onMenuVisibleChange}
-        >
-          <Icon
-            className={classes.navPhoneIcon}
-            type="menu"
-            onClick={handleShowMenu}
-          />
-        </Popover>
+        <div className={classes.headerContainer}>
+          <Link href="/">
+            <h2 className={classes.name} key="h2">
+              TECH HUNTER
+            </h2>
+          </Link>
+
+          <Popover
+            overlayClassName={classes.popoverMenu}
+            placement="bottomRight"
+            content={menu}
+            trigger="click"
+            visible={menuVisible}
+            arrowPointAtCenter
+            onVisibleChange={onMenuVisibleChange}
+          >
+            <MenuOutlined
+              className={classes.navPhoneIcon}
+              type="menu"
+              onClick={handleShowMenu}
+              style={{
+                fontSize: "24px",
+              }}
+            />
+          </Popover>
+        </div>
       ) : null}
       <Row>
         <Col className={classes.menuCol} lg={20} md={19} sm={0} xs={0}>

@@ -37,6 +37,13 @@
   .ant-menu-item-active .headerLink {
     color: 'black' !important;
   }
+
+  @media screen and (max-width: 770px) {
+    background-color: #fff;
+    box-shadow: 0 16px 12px -10px rgb(60 64 67 / 10%);
+    padding: 0 24px;
+  }
+
 }
 
 #logo {
@@ -194,10 +201,10 @@
 .header.homeNavWhite .version .ant-select-arrow {
   color: rgba(0, 0, 0, 0.45);
 }
-.navPhoneIcon:before {
-  background: #eee;
-  box-shadow: 0 7px 0 0 #eee, 0 14px 0 0 #eee;
-}
+// .navPhoneIcon:before {
+//   background: #eee;
+//   box-shadow: 0 7px 0 0 #eee, 0 14px 0 0 #eee;
+// }
 .homeNavWhite .navPhoneIcon:before {
   background: #777;
   box-shadow: 0 7px 0 0 #777, 0 14px 0 0 #777;
@@ -471,8 +478,8 @@
   }
 
  .navPhoneIcon {
-  display: none;
-  position: absolute;
+  display: block;
+  // position: absolute;
   right: 30px;
   top: 32px;
   z-index: 1;
@@ -590,7 +597,7 @@
   }
 
   .popoverMenu {
-    width: 300px;
+    width: 200px;
     button.lang {
       margin: 16px auto;
       float: none;
@@ -602,8 +609,14 @@
     .ant-popover-inner {
       overflow: hidden;
       &-content {
-        padding: 0;
+        padding: 0 !important;
       }
+    }
+    .ant-popover-inner-content {
+      padding: 0 !important;
+    }
+    li {
+      color: black;
     }
   }
 
@@ -628,20 +641,18 @@
     display: none;
   }
 
-  .navPhoneIcon {
-    display: block;
-  }
+  
 
-  .navPhoneIcon:before {
-    content: "";
-    display: block;
-    border-radius: 2px;
-    width: 16px;
-    height: 2px;
-    background: #777;
-    box-shadow: 0 6px 0 0 #777, 0 12px 0 0 #777;
-    position: absolute;
-  }
+  // .navPhoneIcon:before {
+  //   content: "";
+  //   display: block;
+  //   border-radius: 2px;
+  //   width: 16px;
+  //   height: 2px;
+  //   background: #777;
+  //   box-shadow: 0 6px 0 0 #777, 0 12px 0 0 #777;
+  //   position: absolute;
+  // }
 
   .main {
     height: calc(100% - 86px);
@@ -689,10 +700,18 @@
   padding: 16px;
   display: flex;
   justify-content: space-between;
+  @media screen and (max-width: 770px) {
+    margin: 16px 24px;
+    padding: 8px 0;
+    align-items: flex-end;
+  }
 }
 
 .footerLinks {
   display: flex;
+  @media screen and (max-width: 770px) {
+   flex-direction: column;
+  }
 }
 
 .footerItem {
@@ -710,4 +729,17 @@
   ul {
     min-width: 100%;
   }
+}
+
+.headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+
+.name {
+  color: $tech-primary-pink;
+  margin-bottom: 0 !important;
 }

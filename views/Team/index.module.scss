@@ -36,6 +36,28 @@
     justify-content: space-evenly;
     display: flex;
     flex-direction: column;
+    @media screen and (max-width: 520px) {
+        display: none;
+}
+}
+
+.mobileAvatrt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 64px;
+}
+
+.mobileContainer {
+    padding:32px;
+    display: flex;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width: 520px) {
+        display: none;
+}
 }
 
 .image {
@@ -82,6 +104,9 @@
     max-width: 1170px;
     margin: 0 auto;
     padding-top: 120px;
+    @media screen and (max-width: 770px) {
+        padding: 100px 16px 16px;
+}
 }
 
 .teamMember {
